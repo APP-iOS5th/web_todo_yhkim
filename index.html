@@ -12,6 +12,14 @@
             display: flex;
             justify-content: center;
         }
+
+        .list-component {
+            display: flex;
+            justify-content: space-between;
+            background-color: aliceblue;
+            padding-left: 7px;
+            align-items: center;
+        }
     </style>
 </head>
 
@@ -37,13 +45,15 @@
                     <button class="btn btn-primary" id="addTodo">Add</button>
                 </div>
                 <!-- List -->
-                <div>
-                    <ul>
-                        <li>
-                            <div>
-                                Test
-                                <button>완료</button>
-                                <button>삭제</button>
+                <div class="mt-3 coontainer">
+                    <ul class="list-group" id="todoList">
+                        <li class="list-item">
+                            <div class="list-component">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkTodo">
+                                    Test
+                                </div>
+                                <button class="btn btn-danger">Del</button>
                             </div>
                         </li>
                     </ul>
